@@ -2,12 +2,6 @@ area4_news:
     resource: "@Area4NewsBundle/Controller/"
     type:     annotation
     prefix:   /
-
-area4_noticia:
-    resource: "@Area4NoticiaBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
