@@ -519,6 +519,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/AppKernel.php",
+			"settings":
+			{
+				"buffer_size": 1626,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 1856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/security.yml",
+			"settings":
+			{
+				"buffer_size": 830,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 255,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -568,6 +600,8 @@
 	},
 	"file_history":
 	[
+		"/home/html/setimio/README.md",
+		"/home/html/setimio/composer.json",
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Resources/views/Invitaciones/general.html.twig",
 		"/home/html/CampeonatoFutbol-Area4/app/config/config.yml",
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Resources/views/Invitaciones/general.txt.twig",
@@ -693,9 +727,7 @@
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/TipoNotificacion.php",
 		"/home/html/CampeonatoFutbol-Area4/web/app_dev.php",
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/ContableBundle/Resources/views/Documento/facturaEsqueleto.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/UsuarioBundle/Controller/DefaultController.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/ContableBundle/Entity/ClienteRepository.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/ContableBundle/Controller/DefaultController.php"
+		"/home/html/CampeonatoFutbol-Area4/src/Area4/UsuarioBundle/Controller/DefaultController.php"
 	],
 	"find":
 	{
@@ -786,8 +818,119 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/AppKernel.php",
+					"settings":
+					{
+						"buffer_size": 1626,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								334,
+								334
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/config/config.yml",
+					"settings":
+					{
+						"buffer_size": 1856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1856,
+								1856
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/config/security.yml",
+					"settings":
+					{
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
