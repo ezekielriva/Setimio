@@ -3,6 +3,7 @@
 namespace Area4\Bundle\NewsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Area4\Bundle\NewsBundle\Entity\News
@@ -13,9 +14,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class News
 {
-    static $PUBLISHED = 1;
-    static $NO_PUBLISHED = 0;
-
     /**
      * @var integer $id
      *
@@ -70,10 +68,10 @@ class News
     private $updated_at;
 
     /**
-     * undocumented class variable
+     * esta publicado
      *
      * @var boolean
-     * @ORM\Column(name="published", type="integer")
+     * @ORM\Column(name="published", type="boolean")
      **/
     private $published;
 
@@ -81,9 +79,66 @@ class News
      * Publicado por
      *
      * @var Usuario
-     * @ORM\Column(name="published_by")
+     * @ORM\ManyToOne(targetEntity="Area4\Bundle\UserBundle\Entity\User")
      **/
     private $published_by;
+
+    /**
+     * Imagen principal
+     *
+     * @var $image string
+     * @ORM\Column(name="image", type="string", length=255)
+     * @Assert\File(maxSize="6000000")
+     **/
+    private $image;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    public $path;
+
+    // a property used temporarily while deleting
+    private $imagenameForRemove;
+
+    public function getAbsolutePath()
+    {
+        return null === $this->path ? null : $this->getUploadRootDir().'/'.$this->path;
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->path ? null : $this->getUploadDir().'/'.$this->path;
+    }
+
+    protected function getUploadRootDir()
+    {
+        // the absolute directory path where uploaded documents should be saved
+        return __DIR__.'/../../../../../web/'.$this->getUploadDir();
+    }
+
+    public function getUploadDir()
+    {
+        // get rid of the __DIR__ so it doesn't screw when displaying uploaded doc/image in the view.
+        return 'uploads/news';
+    }
+
+    /**
+     * @ORM\PostPersist()
+     * @ORM\PostUpdate()
+     */
+    public function upload()
+    {
+        if (null === $this->image) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->image->move($this->getUploadRootDir(), $this->path);
+
+        unset($this->image);
+    }
 
     /**
      * Constructor
@@ -93,6 +148,7 @@ class News
     public function __construct()
     {
         $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->published = true;
     }
 
     /**
@@ -260,10 +316,7 @@ class News
      **/
     public function isPublished()
     {
-        if ($this->publiched === $PUBLISHED)
-            return true;
-        else
-            return false;
+        return $this->published;
     }
 
     /**
@@ -286,5 +339,71 @@ class News
     public function preUpdate()
     {
         $this->updated_at = new \DateTime('now');
+    }
+
+    /**
+     * Set image
+     *
+     **/
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * Get image
+     *
+     **/
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set image
+     *
+     **/
+    public function setPublishedBy($user)
+    {
+        $this->published_by = $user;
+    }
+
+    /**
+     * Get image
+     *
+     **/
+    public function getPublishedBy()
+    {
+        return $this->published_by;
+    }
+
+    /**
+     * @ORM\PrePersist()
+     * @ORM\PreUpdate()
+     */
+    public function preUpload()
+    {
+        if (null !== $this->image) {
+            // do whatever you want to generate a unique name
+            $this->path = sha1(uniqid(mt_rand(), true)).'.'.$this->image->guessExtension();
+        }
+    }
+
+    /**
+     * @ORM\PreRemove()
+     */
+    public function storeFilenameForRemove()
+    {
+        $this->imagenameForRemove = $this->getAbsolutePath();
+    }
+
+    /**
+     * @ORM\PostRemove()
+     */
+    public function removeUpload()
+    {
+        if ($this->imagenameForRemove) {
+            unlink($this->imagenameForRemove);
+        }
     }
 }

@@ -112,4 +112,16 @@ class Category
     {
         return $this->parent;
     }
+
+    /**
+     * toString
+     *
+     * @return string
+     * @author ezekiel
+     **/
+    public function __toString()
+    {
+        $txt = ($this->parent) ? "--" : $this->description ;
+        return $txt;
+    }
 }
