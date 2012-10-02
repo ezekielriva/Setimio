@@ -1,0 +1,14 @@
+services:
+    area4.news.admin.news:
+        class: Area4\Bundle\NewsBundle\Admin\NewsAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: area4_news, label: Noticias }
+        arguments: [null, Area4\Bundle\NewsBundle\Entity\News, Area4NewsBundle:NewsAdmin]
+        calls:
+            - [setTranslationDomain, [Area4NewsBundle]]
+
+    area4.news.admin.category:
+        class: Area4\Bundle\NewsBundle\Admin\CategoryAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: area4_news, label: Categorias }
+        arguments: [null, Area4\Bundle\NewsBundle\Entity\Category, Area4NewsBundle:CategoryAdmin]

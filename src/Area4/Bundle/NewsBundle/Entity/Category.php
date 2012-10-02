@@ -13,6 +13,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Category
 {
     /**
+     * Id de la categoria "Sin categoria"
+     * Indispensable para que el sistema funcione correctamente
+     *
+     * @var integer
+     **/
+    static $SIN_CATEGORIA_ID = 1;
+    /**
      * @var integer $id
      *
      * @ORM\Column(name="id", type="integer")
@@ -121,7 +128,20 @@ class Category
      **/
     public function __toString()
     {
-        $txt = ($this->parent) ? "--" : $this->description ;
-        return $txt;
+        return $this->getStripe("",$this->parent).$this->description;
+    }
+
+    /**
+     * Crea el stripe para usarlo en la vista
+     *
+     * @return string
+     * @author ezekiel
+     **/
+    private function getStripe($string,$parent)
+    {
+        if ( is_null($parent) ) {
+            return $string;
+        }
+        return $this->getStripe($string."--",$parent->getParent());
     }
 }

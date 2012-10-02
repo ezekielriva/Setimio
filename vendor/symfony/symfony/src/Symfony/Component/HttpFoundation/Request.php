@@ -795,11 +795,14 @@ class Request
     /**
      * Gets the scheme and HTTP host.
      *
+     * If the URL was called with basic authentication, the user
+     * and the password are not added to the generated string.
+     *
      * @return string The scheme and HTTP host
      */
     public function getSchemeAndHttpHost()
     {
-        return $this->getScheme().'://'.(('' != $auth = $this->getUserInfo()) ? $auth.'@' : '').$this->getHttpHost();
+        return $this->getScheme().'://'.$this->getHttpHost();
     }
 
     /**
@@ -1306,8 +1309,11 @@ class Request
     {
         $requestUri = '';
 
-        if ($this->headers->has('X_REWRITE_URL') && false !== stripos(PHP_OS, 'WIN')) {
-            // check this first so IIS will catch
+        if ($this->headers->has('X_ORIGINAL_URL') && false !== stripos(PHP_OS, 'WIN')) {
+            // IIS with Microsoft Rewrite Module
+            $requestUri = $this->headers->get('X_ORIGINAL_URL');
+        } elseif ($this->headers->has('X_REWRITE_URL') && false !== stripos(PHP_OS, 'WIN')) {
+            // IIS with ISAPI_Rewrite
             $requestUri = $this->headers->get('X_REWRITE_URL');
         } elseif ($this->server->get('IIS_WasUrlRewritten') == '1' && $this->server->get('UNENCODED_URL') != '') {
             // IIS7 with URL Rewrite: make sure we get the unencoded url (double slash problem)

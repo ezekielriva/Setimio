@@ -27,6 +27,8 @@ class NewsBackendController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
+
+
         $entities = $em->getRepository('Area4NewsBundle:News')->findAll();
 
         return array(
@@ -90,6 +92,8 @@ class NewsBackendController extends Controller
 
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $user = $this->get('security.context')->getToken()->getUser();
+            $entity->setPublishedBy($user);
             $em->persist($entity);
             $em->flush();
 
