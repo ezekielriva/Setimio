@@ -101,3 +101,9 @@ sonata_admin:
             area4_news:
                     label: Canal de Noticias
                     items: ~
+            area4_slider:
+                    label: Slider de imagenes
+                    items: ~
+            area4_page:
+                    label: Páginas del Sitio
+                    items: ~

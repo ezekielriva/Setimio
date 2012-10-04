@@ -12,3 +12,15 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, group: area4_news, label: Categorias }
         arguments: [null, Area4\Bundle\NewsBundle\Entity\Category, Area4NewsBundle:CategoryAdmin]
+
+    area4.news.admin.imageSlider:
+        class: Area4\Bundle\NewsBundle\Admin\ImageSliderAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: area4_slider, label: Imagenes }
+        arguments: [null, Area4\Bundle\NewsBundle\Entity\ImageSlider, Area4NewsBundle:ImageSliderAdmin]
+
+    area4.news.admin.page:
+        class: Area4\Bundle\NewsBundle\Admin\PageAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: area4_page, label: Páginas }
+        arguments: [null, Area4\Bundle\NewsBundle\Entity\Page, Area4NewsBundle:PageAdmin]
