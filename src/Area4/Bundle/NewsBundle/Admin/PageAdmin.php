@@ -14,7 +14,11 @@ class PageAdmin extends Admin
     {
         $formMapper
             ->add('name','text',array('label'=>"Nombre"))
-            ->add('content','textarea',array('label'=>"Contenido"))
+            ->add('content','textarea',array('label'=>"Contenido", 'attr'=>array('class'=>'tinymce','data-theme'=>'medium')))
+            /* 'attr' => array(
+            'class' => 'tinymce',
+            'data-theme' => 'medium' // simple, advanced, bbcode
+        )*/
         ;
     }
 

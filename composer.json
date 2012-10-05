@@ -21,7 +21,9 @@
         "friendsofsymfony/user-bundle": "*",
         "sonata-project/admin-bundle": "dev-master",
         "sonata-project/doctrine-orm-admin-bundle": "dev-master",
-        "knplabs/knp-menu-bundle": "1.1.*"
+        "knplabs/knp-menu-bundle": "1.1.*",
+        "stfalcon/tinymce-bundle": "2.0.x-dev",
+        "avalanche123/imagine-bundle": "master"
     },
     "scripts": {
         "post-install-cmd": [

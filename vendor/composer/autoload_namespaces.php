@@ -12,6 +12,7 @@ return array(
     'Symfony\\Bundle\\MonologBundle' => $vendorDir . '/symfony/monolog-bundle/',
     'Symfony\\Bundle\\AsseticBundle' => $vendorDir . '/symfony/assetic-bundle/',
     'Symfony' => $vendorDir . '/symfony/symfony/src/',
+    'Stfalcon\\Bundle\\TinymceBundle' => $vendorDir . '/stfalcon/tinymce-bundle/',
     'Sonata\\jQueryBundle' => $vendorDir . '/sonata-project/jquery-bundle/',
     'Sonata\\DoctrineORMAdminBundle' => $vendorDir . '/sonata-project/doctrine-orm-admin-bundle/',
     'Sonata\\CacheBundle' => $vendorDir . '/sonata-project/cache-bundle/',
@@ -28,6 +29,7 @@ return array(
     'JMS\\SecurityExtraBundle' => $vendorDir . '/jms/security-extra-bundle/',
     'JMS\\DiExtraBundle' => $vendorDir . '/jms/di-extra-bundle/',
     'JMS\\AopBundle' => $vendorDir . '/jms/aop-bundle/',
+    'Imagine' => $vendorDir . '/imagine/Imagine/lib/',
     'FOS\\UserBundle' => $vendorDir . '/friendsofsymfony/user-bundle/',
     'Exporter' => $vendorDir . '/sonata-project/exporter/lib/',
     'Doctrine\\ORM' => $vendorDir . '/doctrine/orm/lib/',
@@ -35,6 +37,7 @@ return array(
     'Doctrine\\Common' => $vendorDir . '/doctrine/common/lib/',
     'Doctrine\\Bundle\\DoctrineBundle' => $vendorDir . '/doctrine/doctrine-bundle/',
     'CG\\' => $vendorDir . '/jms/cg/src/',
+    'Avalanche\\Bundle\\ImagineBundle' => $vendorDir . '/avalanche123/imagine-bundle/',
     'Assetic' => $vendorDir . '/kriswallsmith/assetic/src/',
     '' => $baseDir . '/src/',
 );

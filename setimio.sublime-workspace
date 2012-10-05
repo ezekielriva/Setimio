@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
 				"sfren",
 				"sfrender	Symfony2 / Controller / Render"
 			],
@@ -216,10 +224,6 @@
 				"getTipoNovedad"
 			],
 			[
-				"inl",
-				"inline-block"
-			],
-			[
 				"fon",
 				"font-size"
 			],
@@ -298,10 +302,6 @@
 			[
 				"te",
 				"text-align"
-			],
-			[
-				"tex",
-				"text-indent"
 			],
 			[
 				"font",
@@ -520,10 +520,50 @@
 	"buffers":
 	[
 		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 6867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Area4/Bundle/StaticBundle/Controller/StaticController.php",
+			"settings":
+			{
+				"buffer_size": 704,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Resources/Area4StaticBundle/views/Static/main.html.php",
+			"settings":
+			{
+				"buffer_size": 18168,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "web/css/setimio.css",
+			"settings":
+			{
+				"buffer_size": 2281,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "src/Area4/Bundle/NewsBundle/Controller/ImageSliderController.php",
 			"settings":
 			{
-				"buffer_size": 1219,
+				"buffer_size": 1290,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Area4/Bundle/NewsBundle/Resources/views/ImageSlider/display.html.php",
+			"settings":
+			{
+				"buffer_size": 21,
 				"line_ending": "Unix"
 			}
 		}
@@ -577,10 +617,26 @@
 	"file_history":
 	[
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Entity/ImageSlider.php",
+		"/home/html/setimio/eze/web/setimio.css",
+		"/home/html/setimio/app/config/routing.yml",
+		"/home/html/setimio/app/config/routing_dev.yml",
+		"/home/html/setimio/app/AppKernel.php",
+		"/home/html/setimio/src/Area4/Bundle/StaticBundle/Area4StaticBundle.php",
+		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Resources/config/services.yml",
+		"/home/html/setimio/app/Resources/SonataAdminBundle/views/CRUD/edit.html.twig",
+		"/home/html/setimio/vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/CRUD/base_edit.html.twig",
+		"/home/html/setimio/vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/CRUD/edit.html.twig",
+		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Admin/PageAdmin.php",
+		"/home/html/setimio/app/Resources/SonataAdminBundle/views/standard_layout.html.twig",
+		"/home/html/setimio/vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/Core/create_button.html.twig",
+		"/home/html/setimio/vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/standard_layout.html.twig",
+		"/home/html/setimio/db.sql",
+		"/home/html/setimio/composer.json",
+		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Controller/PageAdminController.php",
+		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Controller/ImageSliderController.php",
+		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Entity/Page.php",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Resources/views/ImageSlider/show.html.php",
 		"/home/ezekielriva/Sources/sliderjQuery/slider.html",
-		"/home/html/setimio/db.sql",
-		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Resources/config/services.yml",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Admin/ImageSliderAdmin.php",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Controller/ImageSliderAdminController.php",
 		"/home/html/setimio/app/config/config.yml",
@@ -599,12 +655,9 @@
 		"/home/html/setimio/app/config/parameters.yml",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Form/CategoryType.php",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Form/NewsType.php",
-		"/home/html/setimio/app/AppKernel.php",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/DependencyInjection/Area4NewsExtension.php",
-		"/home/html/setimio/composer.json",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Resources/config/services.xml",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Controller/CategoryAdminController.php",
-		"/home/html/setimio/app/config/routing.yml",
 		"/home/html/setimio/composer.lock",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Entity/Category.php",
 		"/home/html/setimio/src/Area4/Bundle/NewsBundle/Controller/CategoryBackendController.php",
@@ -690,20 +743,7 @@
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/CampeonatoRepository.php",
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/novedadRepository.php",
 		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/novedad.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/ColoresRepository.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/StaticBundle/Resources/views/StaticFrontend/planillaPartidoFront.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Controller/CampeonatoController.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/StaticBundle/Resources/views/StaticFrontend/partidosByCampeonato.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/app/config/security.yml",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Resources/views/Jugador/index.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/app/Resources/KnpPaginatorBundle/views/Pagination/sliding.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/vendor/bundles/Knp/Bundle/PaginatorBundle/Resources/views/Pagination/sliding.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/app/Resources/KnpPaginatorBundle/views/Pagination/sortable_link.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/app/AppKernel.php",
-		"/home/html/CampeonatoFutbol-Area4/app/autoload.php",
-		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Resources/views/Jugador/edit.html.twig",
-		"/home/html/CampeonatoFutbol-Area4/vendor/bundles/FOS/UserBundle/Controller/ProfileController.php",
-		"/home/html/CampeonatoFutbol-Area4/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig"
+		"/home/html/CampeonatoFutbol-Area4/src/Area4/CampeonatoBundle/Entity/ColoresRepository.php"
 	],
 	"find":
 	{
@@ -801,28 +841,166 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/Area4/Bundle/NewsBundle/Controller/ImageSliderController.php",
+					"file": "app/config/config.yml",
 					"settings":
 					{
-						"buffer_size": 1219,
+						"buffer_size": 6867,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								803,
-								803
+								6444,
+								6444
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1893.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Area4/Bundle/StaticBundle/Controller/StaticController.php",
+					"settings":
+					{
+						"buffer_size": 704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Resources/Area4StaticBundle/views/Static/main.html.php",
+					"settings":
+					{
+						"buffer_size": 18168,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 156.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "web/css/setimio.css",
+					"settings":
+					{
+						"buffer_size": 2281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2199,
+								2199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1284.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/Area4/Bundle/NewsBundle/Controller/ImageSliderController.php",
+					"settings":
+					{
+						"buffer_size": 1290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Area4/Bundle/NewsBundle/Resources/views/ImageSlider/display.html.php",
+					"settings":
+					{
+						"buffer_size": 21,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -883,8 +1061,44 @@
 		"selected_items":
 		[
 			[
+				"imageslidercont",
+				"src/Area4/Bundle/NewsBundle/Controller/ImageSliderController.php"
+			],
+			[
 				"images",
 				"src/Area4/Bundle/NewsBundle/Entity/ImageSlider.php"
+			],
+			[
+				"setimio.css",
+				"web/css/setimio.css"
+			],
+			[
+				"base_edit",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/CRUD/base_edit.html.twig"
+			],
+			[
+				"edit.html",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/CRUD/edit.html.twig"
+			],
+			[
+				"edit.html.twig",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/CRUD/edit.html.twig"
+			],
+			[
+				"create_",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/Core/create_button.html.twig"
+			],
+			[
+				"standard_",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/standard_layout.html.twig"
+			],
+			[
+				"layout",
+				"vendor/sonata-project/admin-bundle/Sonata/AdminBundle/Resources/views/standard_layout.html.twig"
+			],
+			[
+				"db",
+				"db.sql"
 			],
 			[
 				"config",
@@ -1357,42 +1571,6 @@
 			[
 				"partidoedit",
 				"src/Area4/CampeonatoBundle/Form/PartidoEditType.php"
-			],
-			[
-				"partidot",
-				"src/Area4/CampeonatoBundle/Form/PartidoType.php"
-			],
-			[
-				"partidotyp",
-				"src/Area4/CampeonatoBundle/Form/PartidoType.php"
-			],
-			[
-				"list.h",
-				"src/Area4/CampeonatoBundle/Resources/views/Campeonato/list.html.twig"
-			],
-			[
-				"nove",
-				"src/Area4/CampeonatoBundle/Entity/novedad.php"
-			],
-			[
-				"novedadty",
-				"src/Area4/CampeonatoBundle/Form/novedadType.php"
-			],
-			[
-				"body",
-				"vendor/twig/lib/Twig/Node/Body.php"
-			],
-			[
-				"partidoed",
-				"src/Area4/CampeonatoBundle/Form/PartidoEditType.php"
-			],
-			[
-				"novedade",
-				"src/Area4/CampeonatoBundle/Controller/novedadController.php"
-			],
-			[
-				"edit.html.twig",
-				"src/Area4/CampeonatoBundle/Resources/views/Partido/edit.html.twig"
 			]
 		],
 		"width": 0.0

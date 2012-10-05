@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "TrajanPro-Bold";
+	src: url(../font/TrajanPro-Bold.otf) format("opentype");
+}
+
+body {
+	background-color: #601406;
+	background-image: url(../img/back_final.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+a:link {
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #4E0F02;
+}
+a:active {
+	text-decoration: none;
+	color: #666;
+}
+
+.titulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #000;
+}
+
+/** Pagina principal **/
+#content {
+	width: 990px;
+	height: 100%;
+	display: block;
+	margin: 0px auto;
+}
+
+#top img {
+	margin: -2px;
+	display: inline-block;
+}
+
+#contacto {
+	text-align: right;
+}
+#contacto a {
+	color: white;
+}
+#contacto a:hover {
+	color: #601406;
+	text-decoration: none;
+}
+
+/* Menu Top */
+#menu-top {
+	text-align: center;
+	margin: 0px auto;
+}
+
+#menu-top a.button {
+	display: inline-block;
+	height: 37px;
+	width: 120px;
+}
+#menu-top #sucursales {
+	background-image: url(../img/sucursales_1.png);
+}
+#menu-top #sucursales:hover {
+	background-image: url(../img/sucursales_2.png);
+}
+#menu-top #productos {
+	background-image: url(../img/productos_1.png);
+}
+#menu-top #productos:hover {
+	background-image: url(../img/productos_2.png);
+}
+#menu-top #regalos {
+	background-image: url(../img/regalos_1.png);
+}
+#menu-top #regalos:hover {
+	background-image: url(../img/regalos_2.png);
+}
+#menu-top #delicatessen {
+	background-image: url(../img/delicatessen_1.png);
+}
+#menu-top #delicatessen:hover {
+	background-image: url(../img/delicatessen_2.png);
+}
+#menu-top #winebar {
+	background-image: url(../img/winebar_1.png);
+}
+#menu-top #winebar:hover {
+	background-image: url(../img/winebar_2.png);
+}
+#menu-top #novedades {
+	background-image: url(../img/novedades_1.png);
+}
+#menu-top #novedades:hover {
+	background-image: url(../img/novedades_2.png);
+}
+#menu-top #contacto {
+	background-image: url(../img/contacto_1.png);
+}
+#menu-top #contacto:hover {
+	background-image: url(../img/contacto_2.png);
+}
+#menu-top #copa {
+	background-image: url(../img/copa_1.png) no-repeat;
+}
+#menu-top #copa:hover {
+	background-image: url(../img/copa_2.png) no-repeat;
+}
+
+#novedades {
+	background-color: white;
+	width: 100%;
+	overflow: hidden;
+	clear: none;
+	margin: 0px auto;
+}
+#novedades #category-column {
+	background-color: white;
+	display: inline-block;
+	width: 321px;
+	height: 334px;
+	margin: 0px auto;
+}
+#novedades #category-column h3 {
+	color: #3D1202;
+	font-family: TrajanPro-Bold;
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+#novedades #category-column #summary {
+	border: 1px solid #C6A69B;
+	width: 80%;
+	height: 80%;
+	margin: 0px auto;
+	box-shadow: 1px 5px 5px #7D7A77;
+   -webkit-box-shadow: 1px 5px 5px #7D7A77;
+   -moz-box-shadow: 1px 5px 5px #7D7A77;
+}
+
+#novedades #category-column img {
+	margin: 5px auto;
+	display: block;
+}
+#novedades #category-column img#copa_leer_mas {
+	width: auto;
+	float: right;
+	display: block;
+	margin: 5px;
+}
+#novedades #category-column span {
+	width: auto;
+	float: right;
+	display: block;
+	margin: 5px;
+	margin-top: 7px;
+}
+#novedades #category-column a { color: #666666; }
+
+#novedades #category-column p {
+	margin: 10px;
+	text-align: justify;
+}

@@ -13,6 +13,11 @@ area4_news:
     type:     annotation
     prefix:   /
 
+area4_static:
+    resource: "@Area4StaticBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 #FosUserBundle
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"
@@ -43,6 +48,10 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
+#imagine
+_imagine:
+    resource: .
+    type:     imagine
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"

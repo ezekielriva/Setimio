@@ -25,6 +25,7 @@ class AppKernel extends Kernel
             new Area4\Bundle\NewsBundle\Area4NewsBundle(),
             new Area4\Bundle\UserBundle\Area4UserBundle(),
             new Area4\Bundle\AdminBundle\Area4AdminBundle(),
+            new Area4\Bundle\StaticBundle\Area4StaticBundle(),
             
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\CacheBundle\SonataCacheBundle(),
@@ -33,7 +34,10 @@ class AppKernel extends Kernel
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
 
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+
+            new Stfalcon\Bundle\TinymceBundle\StfalconTinymceBundle(),
             
+            new Avalanche\Bundle\ImagineBundle\AvalancheImagineBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

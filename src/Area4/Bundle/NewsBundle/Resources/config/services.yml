@@ -24,3 +24,9 @@ services:
         tags:
             - { name: sonata.admin, manager_type: orm, group: area4_page, label: Páginas }
         arguments: [null, Area4\Bundle\NewsBundle\Entity\Page, Area4NewsBundle:PageAdmin]
+
+    area4.news.admin.layout:
+        class: Area4\Bundle\NewsBundle\Admin\LayoutAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: area4_page, label: Layout }
+        arguments: [null, Area4\Bundle\NewsBundle\Entity\Layout, Area4NewsBundle:LayoutAdmin]

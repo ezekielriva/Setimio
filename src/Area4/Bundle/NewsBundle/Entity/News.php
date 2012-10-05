@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Area4\Bundle\NewsBundle\Entity\News
  *
  * @ORM\Table(name="news_News")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Area4\Bundle\NewsBundle\Repository\NewsRepository")
  * @ORM\HasLifecycleCallbacks
  */
 class News
@@ -405,5 +405,19 @@ class News
         if ($this->imagenameForRemove) {
             unlink($this->imagenameForRemove);
         }
+    }
+
+    /**
+     * Get - Resumen del Contenido
+     *
+     * @return string
+     * @author ezekiel
+     **/
+    public function getContentSummary()
+    {
+        $summary = explode(' ', $this->content);
+        $summary = array_slice($summary, 0, 40); //40 palabras
+        $summary = implode(' ', $summary);
+        return $summary;
     }
 }
